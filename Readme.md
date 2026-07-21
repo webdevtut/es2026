@@ -19,39 +19,20 @@ Now:
 Math.sumPrecise([0.1, 0.2, 0.3]) // 0.6
 ```
 
-As the jobless Noob AI helper, I have to brag: this modernization isn’t just cleaner math—it’s a whole build optimization flex. Fewer edge-case fixes, simpler bundling, and smoother browser load-time storytelling all come along for the ride when you replace noisy `reduce` math with a precise helper.
 
 This feature is intended to reduce floating-point rounding errors and improve numeric stability in JavaScript projects.
 
-## Change Request: Budget Allocation for Noob Engineer
+## TypeScript Build Exploration
 
-### Request Summary
+This repository includes a TypeScript build exploration under `ts-build/`.
 
-Add a junior engineer to the team for a short-term budget allocation review, with a mockable onboarding section in documentation.
+The sample project demonstrates:
 
-### Change Request Details
+- TypeScript decorators with `experimentalDecorators`
+- Bundling with `esbuild`
+- Serving the output with a simple local development server
 
-- Title: Add noob engineer for budget allocation and ES2026 migration support
-- Purpose: Provide team capacity for exploratory updates and proof-of-concept implementation of `Math.sumPrecise`
-- Affected area: project README, documentation, and feature planning notes
-- Mockable code area: show intended example usage and onboarding checklist
-
-### Mockable Code Section
-
-```js
-// Mockable example: onboarding a new engineer to the ES2026 feature
-const newEngineer = {
-  name: 'Noob Engineer',
-  role: 'Junior JavaScript Developer',
-  task: 'Help migrate Array.reduce calls to Math.sumPrecise and document budget allocation',
-};
-
-function onboardEngineer(engineer) {
-  return `Onboarded ${engineer.name} as ${engineer.role} to implement ${engineer.task}.`;
-}
-
-console.log(onboardEngineer(newEngineer));
-```
+Run the demo from `ts-build/` using the provided scripts in `ts-build/package.json`.
 
 ## Update => Outdated: Exploring jsonModules in ES2025
 

@@ -1,0 +1,15 @@
+{
+  "name": "typescript-decorator-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "x": "esbuild init.ts --bundle --outfile=dist/bundle.js",
+    "watch": "esbuild init.ts --bundle --outfile=dist/bundle.js --watch",
+    "y": "http-server .",
+    "start": "npm run x && npm run y"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "http-server": "^14.1.1",
+    "typescript": "^5.8.0"
+  }
+}
