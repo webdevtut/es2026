@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Bundled Decorator Demo</title>
+    <title>TypeScript Decorator Demo</title>
 </head>
+
 <body>
 
-<h2 id="title"></h2>
-<p id="result"></p>
+    <label>
+        <input type="radio" name="usecase" value="addition" checked>
+        Addition
+    </label>
 
-<script src="./dist/bundle.js"></script>
+    <label>
+        <input type="radio" name="usecase" value="kebab">
+        PascalCase → kebab-case
+    </label>
+
+    <br><br>
+
+    <div id="stringContainer" style="display:none;">
+        <input id="pascalInput" placeholder="AbstractComponentStructure">
+    </div>
+
+    <br>
+
+    <button id="runBtn">
+        UI breakpoint
+    </button>
+
+    <hr>
+
+    <p id="result"></p>
+
+    <script src="./dist/bundle.js"></script>
 
 </body>
+
 </html>

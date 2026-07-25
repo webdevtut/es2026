@@ -1,16 +1,18 @@
 {
   "name": "typescript-decorator-demo",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "x": "esbuild init.ts --bundle --outfile=dist/bundle.js",
-    "watch": "esbuild init.ts --bundle --outfile=dist/bundle.js --watch",
+    "x": "esbuild src/main.ts --bundle --outfile=dist/bundle.js --sourcemap",
+    "watch": "esbuild src/main.ts --bundle --outfile=dist/bundle.js --watch --sourcemap",
     "y": "http-server .",
-    "start": "nub run x && nub run y"
+    "dev": "nub run x && nub run y"
   },
   "devDependencies": {
     "esbuild": "^0.25.0",
     "http-server": "^14.1.1",
-    "typescript": "^5.8.0"
+    "typescript": "^5.8.0",
+    "rxjs": "^8.0.0-alpha.14"
   },
   "devEngines": {
     "packageManager": {
