@@ -1,0 +1,20 @@
+body {
+    border: 1rem solid goldenrod !important;
+}
+input[type="range"] {
+    --theme: color(display-p3 1 0 .5);
+    --track: oklch(from var(--theme) .98 calc(c / 2) h);
+    --thumb: oklch(from var(--theme) calc(l - .2) c h);
+    background: linear-gradient(to right in oklab,
+            var(--theme) calc(var(--live-value-pct) * 100%),
+            var(--track) 0);
+
+    accent-color: var(--thumb);
+    appearance: none;
+    height: 4px;
+    border-radius: 1e4px;
+    outline-offset: 4px;
+    --fill: clamp(0, calc((var(--live-value-pct) - .7) / .3), 1);
+    box-shadow:
+        inset 0 0 0 calc(1px + var(--fill) * 3px) oklch(from var(--thumb) calc(l + .15 * var(--fill)) calc(c * (.4 + .6 * var(--fill))) h);
+}

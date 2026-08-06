@@ -6,6 +6,12 @@
 </head>
 
 <body>
+    <div class="range-container">
+        <label for="range">
+            Range input styled with Custom CSS proms from the "prop-for-that" library:
+            <input type="range" id="range" data-props-for="range" min="0" max="100" value="88" />
+        </label>
+    </div>
 
     <label>
         <input type="radio" name="usecase" value="addition" checked>
@@ -34,6 +40,7 @@
     <p id="result"></p>
 
     <script src="./dist/bundle.js"></script>
+    <script type="module" src="./wailtind.config.js"></script>
 
 </body>
 
