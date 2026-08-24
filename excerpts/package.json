@@ -1,0 +1,47 @@
+{
+  "name": "excerpt",
+  "version": "1.0.0",
+  "description": "core-js exploration",
+  "keywords": [
+    "javascript",
+    "core-js",
+    "ES2026",
+    "tc39",
+    "es262",
+    "nub",
+    "typescript"
+  ],
+  "homepage": "https://github.com/webdevtut/es2026#readme",
+  "bugs": {
+    "url": "https://github.com/webdevtut/es2026/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdevtut/es2026.git"
+  },
+  "license": "ISC",
+  "author": "Tushar G Kadam",
+  "type": "module",
+  "main": "dist/24082026.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/24082026.js",
+    "dev": "nub run build && nub run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "nub",
+      "version": "^0.7.5",
+      "onFail": "warn"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.0",
+    "scriptc": "^0.0.35"
+  },
+  "dependencies": {
+    "core-js": "^3.50.0"
+  }
+}

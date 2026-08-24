@@ -1,0 +1,13 @@
+
+# Dependencies
+node_modules/
+
+#Custom Interfaces
+**.d.ts
+
+#lockfile
+package-lock.json
+**.lock
+
+#dist
+dist/
