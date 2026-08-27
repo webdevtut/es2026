@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "x": "esbuild src/main.ts --bundle --outfile=dist/bundle.js --sourcemap --minify",
-    "z" :"esbuild src/ui/styles/global.css --minify --outfile=src/ui/styles/jsalreadyknows.css",
+    "z" :"esbuild src/ui/styles/global.css --minify --outfile=dist/jsalreadyknows.css",
     "watch": "esbuild src/main.ts --bundle --outfile=dist/bundle.js --watch --sourcemap --minify",
     "y": "http-server .",
     "dev": "nub run x && nub run z && nub run y"

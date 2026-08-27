@@ -1,2 +1,2 @@
-import css from "./src/ui/styles/jsalreadyknows.css" with { type: "css" };
+import css from "./dist/jsalreadyknows.css" with { type: "css" };
 document.adoptedStyleSheets.push(css);
