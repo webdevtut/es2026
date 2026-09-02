@@ -18,3 +18,11 @@ input[type="range"] {
     box-shadow:
         inset 0 0 0 calc(1px + var(--fill) * 3px) oklch(from var(--thumb) calc(l + .15 * var(--fill)) calc(c * (.4 + .6 * var(--fill))) h);
 }
+.demo-shell {
+    padding: 20px;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    max-width: 420px;
+    margin: 20px auto;
+    background: #a487c2;
+}

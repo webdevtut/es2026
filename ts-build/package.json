@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "x": "esbuild src/main.ts --bundle --outfile=dist/bundle.js --sourcemap --minify",
-    "z" :"esbuild src/ui/styles/global.css --minify --outfile=dist/jsalreadyknows.css",
+    "build": "esbuild src/main.ts --bundle --outfile=dist/bundle.js --sourcemap --minify",
+    "build:css": "esbuild src/ui/styles/global.css --minify --outfile=dist/jsalreadyknows.css",
     "watch": "esbuild src/main.ts --bundle --outfile=dist/bundle.js --watch --sourcemap --minify",
     "y": "http-server .",
-    "dev": "nub run x && nub run z && nub run y"
+    "dev": "npm run build && npm run build:css && npm run y"
   },
   "devDependencies": {
     "esbuild": "^0.25.0",
