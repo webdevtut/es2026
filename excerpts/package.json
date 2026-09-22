@@ -25,14 +25,14 @@
   "main": "dist/24082026.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/24082026.js",
+    "start": "nub dist/24082026.js && nub dist/22092026.js",
     "dev": "nub run build && nub run start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devEngines": {
     "packageManager": {
       "name": "nub",
-      "version": "^0.7.5",
+      "version": "^0.9.3",
       "onFail": "warn"
     }
   },
