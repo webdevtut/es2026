@@ -1,0 +1,14 @@
+{
+  "name": "lightning-css-landing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A minimal landing page compiled with Lightning CSS and CSS Modules.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "clean": "node -e \"import('node:fs').then(fs => fs.rmSync('dist', { recursive: true, force: true }))\""
+  },
+  "devDependencies": {
+    "lightningcss": "^1.33.0"
+  }
+}
