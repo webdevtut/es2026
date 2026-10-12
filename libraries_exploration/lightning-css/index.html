@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A small landing page demonstrating Lightning CSS compilation and CSS Modules." />
+  <title>Lightning CSS — Ship modern CSS faster</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="page">
+    <header class="nav">
+      <a class="brand" href="#" aria-label="Lightning CSS home">
+        <span class="brandMark" aria-hidden="true">ϟ</span>
+        <span>Lightning CSS</span>
+      </a>
+      <nav class="navLinks" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#workflow">Workflow</a>
+        <a href="https://lightningcss.dev/docs.html">Docs ↗</a>
+      </nav>
+      <a class="navCta" href="https://github.com/parcel-bundler/lightningcss">View on GitHub <span
+          aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow"><span class="statusDot"></span> THE CSS TOOLCHAIN, REIMAGINED</div>
+        <h1>Ship modern CSS.<br /><span class="gradientText">Faster.</span></h1>
+        <p class="heroCopy">A fast CSS parser, transformer, bundler and minifier. Write modern styles, target real
+          browsers, and ship lean production CSS.</p>
+        <div class="heroActions">
+          <a class="primaryButton" href="#workflow">Explore the workflow <span aria-hidden="true">→</span></a>
+          <a class="secondaryButton" href="https://lightningcss.dev/">Read the docs</a>
+        </div>
+        <div class="heroMeta"><span class="check">✓</span> Modern syntax <span class="metaDivider">/</span> CSS Modules
+          <span class="metaDivider">/</span> Production-ready output</div>
+      </section>
+
+      <section class="demo" id="workflow" aria-label="CSS compilation example">
+        <div class="demoTop">
+          <div class="windowDots"><i></i><i></i><i></i></div><span>src/styles/hero.module.css</span><span
+            class="fileTag">CSS MODULE</span>
+        </div>
+        <div class="codeGrid">
+          <div class="codePane">
+            <div class="paneLabel"><span class="paneIcon">✳</span> SOURCE CSS</div>
+            <pre><code><span class="codeMuted">/* Modern CSS, clean source */</span>
+<span class="codePurple">.card</span> {
+  <span class="codeBlue">padding</span>: <span class="codeGreen">1.5rem</span>;
+  <span class="codeBlue">border-radius</span>: <span class="codeGreen">1rem</span>;
+  <span class="codeBlue">background</span>: <span class="codeGreen">#fff</span>;
+
+  <span class="codePurple">&amp;:hover</span> {
+    <span class="codeBlue">transform</span>: <span class="codeGreen">translateY(-2px)</span>;
+  }
+}</code></pre>
+          </div>
+          <div class="codePane outputPane">
+            <div class="paneLabel"><span class="outputCheck">✓</span> COMPILED OUTPUT</div>
+            <pre><code><span class="codePurple">.hero_module__card_a1b2c</span> {
+  <span class="codeBlue">padding</span>: <span class="codeGreen">1.5rem</span>;
+  <span class="codeBlue">border-radius</span>: <span class="codeGreen">1rem</span>;
+  <span class="codeBlue">background</span>: <span class="codeGreen">#fff</span>
+}
+<span class="codePurple">.hero_module__card_a1b2c:hover</span> {
+  <span class="codeBlue">transform</span>: <span class="codeGreen">translateY(-2px)</span>
+}</code></pre>
+            <div class="outputNote">Illustrative output — generated class names vary by build.</div>
+          </div>
+        </div>
+        <div class="demoBottom"><span><span class="pulse"></span> CSS transformed at build time</span><span>CSS Modules
+            · Nesting · Minification</span></div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="sectionIntro">
+          <p class="sectionKicker">ONE TOOL. LESS FRICTION.</p>
+          <h2>From authoring to production.</h2>
+          <p>Keep your source readable. Let the compiler handle the repetitive work.</p>
+        </div>
+        <div class="featureGrid">
+          <article class="featureCard">
+            <div class="featureIcon blueIcon">↗</div>
+            <h3>Modern syntax</h3>
+            <p>Use CSS nesting and modern color syntax, then transform styles for your browser targets.</p>
+            <span class="featureFoot">TRANSFORM</span>
+          </article>
+          <article class="featureCard">
+            <div class="featureIcon purpleIcon">#</div>
+            <h3>Scoped by default</h3>
+            <p>CSS Modules generate unique local names to reduce accidental collisions between components.</p>
+            <span class="featureFoot">CSS MODULES</span>
+          </article>
+          <article class="featureCard">
+            <div class="featureIcon greenIcon">⚡</div>
+            <h3>Lean output</h3>
+            <p>Bundle CSS imports, minify output, and reduce unnecessary bytes before deployment.</p>
+            <span class="featureFoot">BUNDLE + MINIFY</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="bottomCta">
+        <div>
+          <p class="sectionKicker">READY WHEN YOU ARE</p>
+          <h2>Make your CSS pipeline lighter.</h2>
+          <p>Start with a tiny build script. Add it to your existing toolchain when you're ready.</p>
+        </div>
+        <a class="primaryButton" href="https://lightningcss.dev/docs.html">Get started <span
+            aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer class="footer"><a class="brand footerBrand" href="#"><span class="brandMark"
+          aria-hidden="true">ϟ</span><span>Lightning CSS</span></a><span>Demo landing page · Built with Lightning
+        CSS</span><span>Fast styles. Fewer surprises.</span></footer>
+  </div>
+</body>
+
+</html>
