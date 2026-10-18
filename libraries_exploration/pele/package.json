@@ -1,0 +1,25 @@
+{
+  "name": "pele",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild index.js --bundle --format=iife --outfile=dist/bundle.js",
+    "watch": "esbuild index.js --bundle --format=iife --outfile=dist/bundle.js --watch",
+    "serve": "live-server --port=8080 --watch=index.html,dist",
+    "dev": "npm run build && concurrently --kill-others \"npm:watch\" \"npm:serve\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "pele": "^1.6.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "esbuild": "^0.28.2",
+    "live-server": "^1.2.2"
+  }
+}
