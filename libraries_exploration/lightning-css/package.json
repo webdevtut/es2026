@@ -2,6 +2,8 @@
   "name": "lightning-css-landing",
   "version": "1.0.0",
   "private": true,
+  "author": "Webdevtut™",
+  "packageManager": "npm@12.2.1",
   "type": "module",
   "description": "A minimal landing page compiled with Lightning CSS and CSS Modules.",
   "scripts": {
